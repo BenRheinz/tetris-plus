@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Selection difficulty (wide or speed)</title>
+    <link rel="stylesheet" href="wide/css/a.css" />
+    <link rel="shortcut icon" href="images/favicon.ico" />
+    <link rel="bookmark" href="images/favicon.ico" />
+  </head>
+  <body>
+    <div class="box">
+      <img src="images/111.png" width="100%" />
+      <div style="width: 100%" onclick="rule()">
+        <a
+          ><h2 style="text-align: center">
+            <strong> View rules </strong>
+          </h2></a
+        >
+      </div>
+      <div style="width: 100%" onclick="wide()">
+        <a><h3 style="text-align: center">wide</h3></a>
+      </div>
+      <div style="width: 100%" onclick="speed()">
+        <a><h3 style="text-align: center">speed</h3></a>
+      </div>
+    </div>
+  </body>
+  <script>
+    function wide() {
+      window.location.replace("wide/index.html");
+    }
+    function speed() {
+      window.location.replace("speed/index.html");
+    }
+    function rule() {
+      window.location.replace("etc/rule.html");
+    }
+  </script>
+</html>

@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Let's play a classical tetris game together~</title>
+    <script src="js/lodash.min.js"></script>
+    <link rel="stylesheet" href="css/index.css" />
+    <link rel="shortcut icon" href="../images/favicon.ico" />
+    <link rel="bookmark" href="../images/favicon.ico" />
+  </head>
+
+  <body>
+    <div style="text-align: center">
+      <p onclick="up()">
+        用时：
+        <input
+          type="text"
+          id="timetext"
+          value="00时00分00秒"
+          readonly
+          class="style"
+        /><br />
+      </p>
+      <button class="header" onclick="init()">开始游戏</button>
+      <div id="container" class="container"></div>
+      <div>
+        <br />
+        <button onclick="left()">左移</button>
+        <button onclick="on()">翻转</button>
+        <button onclick="right()">右移</button><br />
+        <button onclick="down()">下移</button>
+      </div>
+    </div>
+  </body>
+  <script>
+    function rule() {
+      window.location.replace("else/rule.html");
+    }
+  </script>
+
+  <script src="js/hard.js"></script>
+</html>

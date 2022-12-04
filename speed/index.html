@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>choose difficulty</title>
+    <link rel="stylesheet" href="css/1.css" />
+    <link rel="shortcut icon" href="../images/favicon.ico" />
+    <link rel="bookmark" href="../images/favicon.ico" />
+  </head>
+  <body>
+    <div class="box">
+      <img src="../images/111.png" width="100%" />
+      <div style="width: 100%" onclick="rule()">
+        <a
+          ><h2 style="text-align: center">
+            <strong> View rules </strong>
+          </h2></a
+        >
+      </div>
+      <div style="width: 100%" onclick="Easy()">
+        <a><h3 style="text-align: center">easy</h3></a>
+      </div>
+      <div style="width: 100%" onclick="Hard()">
+        <a><h3 style="text-align: center">hard</h3></a>
+      </div>
+      <div style="width: 100%" onclick="Hall()">
+        <a><h3 style="text-align: center">hall</h3></a>
+      </div>
+    </div>
+  </body>
+  <script>
+    function Easy() {
+      window.location.replace("easy.html");
+    }
+    function Hard() {
+      window.location.replace("hard.html");
+    }
+    function Hall() {
+      window.location.replace("hall.html");
+    }
+    function rule() {
+      window.location.replace("../etc/rule.html");
+    }
+  </script>
+</html>

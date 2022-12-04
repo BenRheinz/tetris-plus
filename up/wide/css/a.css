@@ -1,0 +1,53 @@
+a:link {
+  text-decoration: none; /* 指正常的未被访问过的链接*/
+  color: rgb(43, 43, 43);
+}
+a:visited {
+  text-decoration: none; /*指已经访问过的链接*/
+  color: rgb(43, 43, 43);
+}
+a:hover {
+  text-decoration: none; /*指鼠标在链接*/
+  color: rgba(0, 69, 159, 0.698);
+}
+a:active {
+  text-decoration: none; /* 指正在点的链接*/
+  color: rgb(43, 43, 43);
+}
+
+@font-face {
+  font-family: "a";
+  src: url("../../etc/a.ttf");
+}
+
+body {
+  margin: 0;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: aliceblue;
+}
+.box {
+  height: 80vh;
+  width: 70%;
+  max-width: 600px;
+  background-color: #fff;
+  padding: 30px;
+  border-radius: 4px;
+  box-shadow: rgb(0 0 0 / 20%) 0px 2px 1px -1px,
+    rgb(0 0 0 / 14%) 0px 1px 1px 0px, rgb(0 0 0 / 12%) 0px 1px 3px 0px;
+  overflow-wrap: break-word;
+  word-wrap: break-word;
+  hyphens: auto;
+  text-align: justify;
+  color: #333;
+  font-size: 17px;
+  line-height: 1.7;
+  letter-spacing: 0.034em;
+  font-family: "a";
+  overflow-y: scroll;
+}
+.box::-webkit-scrollbar {
+  display: none; /* Chrome Safari */
+}

@@ -1,0 +1,9 @@
+.container {
+  width: 500px;
+  height: 360px;
+  background: url("../bg.png") no-repeat;
+  background-size: 500px 360px;
+  /* background-color: black; */
+  position: relative;
+  box-shadow: 3px 3px 5px #888888;
+}
